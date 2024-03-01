@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <article>
-  <header class="mb-16">
+  <header class="mb-10">
     <h1 class="!my-0 pb-2.5">{{ .Title }}</h1>
 
     {{ if ne .Type "page" }}
@@ -13,7 +13,7 @@
       <!---->
       {{ if $single_author }}
       <span class="mx-1">&middot;</span>
-      <span>{{ $single_author }}</span>
+      <span>by {{ $single_author }}</span>
       {{ end }}
     </div>
     {{ end }}
@@ -26,9 +26,9 @@
   <footer class="mt-12 flex flex-wrap">
     {{ range .Params.tags }} {{ $href := print (absURL "tags/") (urlize .) }}
     <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      class="mb-5 mr-4 rounded-full bg-black/[3%] px-6 py-1.5 no-underline dark:bg-white/[8%] opacity-80"
       href="{{ $href }}"
-      >{{ . }}</a
+      >#{{ . }}</a
     >
     {{ end }}
   </footer>

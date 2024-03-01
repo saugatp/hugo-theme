@@ -6,13 +6,13 @@
 
 <!-- bg_color -->
 {{ $color_map := dict "linen" "#faf8f1" "wheat" "#f8f5d7" "gray" "#fbfbfb"
-"light" "#fff" }}<!---->
+"light" "#fffcfc" }}<!---->
 {{ $.Scratch.Set "bg_color" (index $color_map (site.Params.color | default
 (print "linen"))) }}<!---->
 {{ $bg_color := $.Scratch.Get "bg_color" }}<!---->
 
 <!-- social_list -->
-{{ $social_params := slice "twitter" "github" "instagram" "linkedin" "mastodon"
+{{ $social_params := slice "github" "instagram" "linkedin"
 "rss" }}<!---->
 {{ range $social_params }}<!---->
 {{ if isset site.Params . }}<!---->
@@ -38,10 +38,9 @@
   style="--bg: {{ $bg_color }}"
   lang="{{ or site.LanguageCode site.Language.Lang }}"
 >
-  {{ partial "head.html" . }}
+ {{ partial "head.html" . }}
   <body class="text-black duration-200 ease-out dark:text-white">
     {{ partial "header.html" . }}
-
     <main
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
     >
