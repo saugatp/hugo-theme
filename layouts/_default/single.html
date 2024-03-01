@@ -2,10 +2,10 @@
 
 <article>
   <header class="mb-10">
-    <h1 class="!my-0 pb-2.5">{{ .Title }}</h1>
+    <h1 class="!my-0 pb-2.5 font-semibold">{{ .Title }}</h1>
 
     {{ if ne .Type "page" }}
-    <div class="text-sm antialiased opacity-60">
+    <div class="mt-2.5 mb-3 text-sm antialiased text-[#7e6635] font-mono tracking-tighter">
       {{ if .Date }}
       <time>{{ .Date | time.Format ":date_medium" }}</time>
       {{ end }}<!---->
@@ -19,7 +19,7 @@
     {{ end }}
   </header>
 
-  <section>{{ .Content }}</section>
+  <section class="font-serif">{{ .Content }}</section>
 
   <!-- Post Tags -->
   {{ if .Params.tags }}

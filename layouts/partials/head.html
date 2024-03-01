@@ -20,8 +20,7 @@
   <meta name="author" content="{{ or .Params.author $site_author }}" />
   {{ else }}
   <!---->
-  <meta
-    name="description"
+  <meta name="description"
     content="{{ site.Params.description | default (print `A personal blog`) }}"
   />
   <meta name="author" content="{{ $site_author }}" />
@@ -74,9 +73,11 @@
   <!---->
 
   <!-- Favicon -->
-  <link rel="icon" href="{{ `favicon.ico` | absURL }}" />
-  <link rel="apple-touch-icon" href="{{ `apple-touch-icon.png` | absURL }}" />
-
+  <link rel="icon" href="{{ `saugat.ico` | absURL }}" />
+  <link rel="apple-touch-icon" href="{{ `apple-touch-icon-iphone-60x60.png` | absURL }}" />
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ `apple-touch-icon-iphone-76x76.png` | absURL }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ `apple-touch-icon-iphone-retina-120x120.png` | absURL }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ `apple-touch-icon-ipad-retina-152x152.png` | absURL }}">
   <!-- Generator -->
   {{ hugo.Generator }}
 
