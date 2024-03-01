@@ -577,6 +577,8 @@ body {
 .prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
 
 .prose :where([class~="lead"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -596,6 +598,7 @@ body {
 .prose :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   color: var(--tw-prose-bold);
   font-weight: 600;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .prose :where(a strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -737,6 +740,7 @@ body {
   margin-top: 1.6em;
   margin-bottom: 0.6em;
   line-height: 1.6;
+  font-family: 'Lora', serif;
 }
 
 .prose :where(h3 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -1528,12 +1532,16 @@ body {
   text-align: center;
 }
 
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.font-dm {
+  font-family: 'DM Mono', monospaced;
 }
 
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+.font-lora {
+  font-family: 'Lora', serif;
+}
+
+.font-rubik {
+  font-family: 'Rubik', sans-serif;
 }
 
 .text-2xl {
@@ -1566,6 +1574,10 @@ body {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-semibold {
@@ -1609,6 +1621,21 @@ body {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#987a38\] {
+  --tw-text-opacity: 1;
+  color: rgb(152 122 56 / var(--tw-text-opacity));
+}
+
+.text-\[\#7a6a30\] {
+  --tw-text-opacity: 1;
+  color: rgb(122 106 48 / var(--tw-text-opacity));
+}
+
+.text-\[\#867535\] {
+  --tw-text-opacity: 1;
+  color: rgb(134 117 53 / var(--tw-text-opacity));
 }
 
 .no-underline {

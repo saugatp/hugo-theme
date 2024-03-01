@@ -2,10 +2,10 @@
 
 <article>
   <header class="mb-10">
-    <h1 class="!my-0 pb-2.5 font-semibold">{{ .Title }}</h1>
+    <h1 class="!my-0 pb-2.5 font-semibold font-lora">{{ .Title }}</h1>
 
     {{ if ne .Type "page" }}
-    <div class="mt-2.5 mb-3 text-sm antialiased text-[#7e6635] font-mono tracking-tighter">
+    <div class="mt-2.5 mb-3 text-sm antialiased text-[#7e6635] font-dm tracking-tighter">
       {{ if .Date }}
       <time>{{ .Date | time.Format ":date_medium" }}</time>
       {{ end }}<!---->
@@ -19,14 +19,14 @@
     {{ end }}
   </header>
 
-  <section class="font-serif">{{ .Content }}</section>
+  <section>{{ .Content }}</section>
 
   <!-- Post Tags -->
   {{ if .Params.tags }}
   <footer class="mt-12 flex flex-wrap">
     {{ range .Params.tags }} {{ $href := print (absURL "tags/") (urlize .) }}
     <a
-      class="mb-5 mr-4 rounded-full bg-black/[3%] px-6 py-1.5 no-underline dark:bg-white/[8%] opacity-80"
+      class="mb-5 mr-4 rounded-full font-dm bg-black/[3%] px-6 py-1.5 no-underline dark:bg-white/[8%] opacity-80"
       href="{{ $href }}"
       >#{{ . }}</a
     >

@@ -4,7 +4,7 @@
       class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
       href="{{ `` | absURL }}"
       >
-      {{ $titleParts := split site.Title "|" }}
+      {{ $titleParts := split site.Title "-" }}
       {{ $myName := index $titleParts 0 }}
       {{ $myName }}</a
     >

@@ -4,7 +4,26 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      
+      typography:(theme) =>({
+        DEFAULT:{
+          css:{
+            p:{
+              '@apply font-rubik font-light': {},
+            },
+            h3:{
+              '@apply font-lora': {}
+            },
+            strong:{
+              '@apply font-sans': {}
+            }
+          }
+        }
+      }),
+      fontFamily: {
+        lora: "'Lora', serif",
+        dm: "'DM Mono', monospaced",
+        rubik:"'Rubik', sans-serif"
+      }
     },
   },
   plugins: [require('@tailwindcss/typography')],
