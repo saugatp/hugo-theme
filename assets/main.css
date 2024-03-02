@@ -578,7 +578,9 @@ body {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   font-family: 'Rubik', sans-serif;
-  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0.8;
 }
 
 .prose :where([class~="lead"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -1075,6 +1077,10 @@ body {
   margin-bottom: 0;
 }
 
+.prose :where(em):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .prose-neutral {
   --tw-prose-body: #404040;
   --tw-prose-headings: #171717;
@@ -1549,6 +1555,11 @@ body {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
@@ -1574,10 +1585,6 @@ body {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .font-semibold {
@@ -1608,9 +1615,9 @@ body {
   letter-spacing: 0.1em;
 }
 
-.text-\[\#7a6230\] {
+.text-\[\#6d582e\] {
   --tw-text-opacity: 1;
-  color: rgb(122 98 48 / var(--tw-text-opacity));
+  color: rgb(109 88 46 / var(--tw-text-opacity));
 }
 
 .text-\[\#7e6635\] {
@@ -1618,24 +1625,14 @@ body {
   color: rgb(126 102 53 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#987a38\] {
-  --tw-text-opacity: 1;
-  color: rgb(152 122 56 / var(--tw-text-opacity));
-}
-
-.text-\[\#7a6a30\] {
-  --tw-text-opacity: 1;
-  color: rgb(122 106 48 / var(--tw-text-opacity));
-}
-
 .text-\[\#867535\] {
   --tw-text-opacity: 1;
   color: rgb(134 117 53 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1653,6 +1650,10 @@ body {
 
 .opacity-80 {
   opacity: 0.8;
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .duration-200 {

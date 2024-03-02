@@ -23,7 +23,7 @@
   {{ if site.Params.name }}
   <div>
     <h1 class="mb-2 mt-16 font-semibold font-lora">{{ site.Params.name }}</h1>
-    <div class="break-words font-rubik tracking-normal truncate text-[#7e6635]">
+    <div class="break-words font-rubik tracking-normal truncate text-[#6d582e]">
       {{ site.Params.bio | default (print `A personal blog by `
       site.Params.name) }}
     </div>
@@ -41,8 +41,8 @@
     >{{ index .Keywords 0 }} </span
   >
   {{ end }}
-  <h3 class="!my-0 pb-1 font-semibold font-lora !leading-none">{{ .Title }}</h3>
-  <div class="mt-2 line-clamp-2 font-rubik text-pretty text-ellipsis overflow-hidden text-break">
+  <h2 class="!my-0 pb-1 font-semibold font-lora !leading-none">{{ .Title }}</h2>
+  <div class="mt-2 line-clamp-2 font-rubik opacity-90 text-pretty text-ellipsis overflow-hidden text-break">
     {{ .Summary }}
   </div>
   

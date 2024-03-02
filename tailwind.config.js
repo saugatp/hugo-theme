@@ -8,12 +8,15 @@ module.exports = {
         DEFAULT:{
           css:{
             p:{
-              '@apply font-rubik font-light': {},
+              '@apply font-rubik opacity-80 antialiased': {},
             },
             h3:{
               '@apply font-lora': {}
             },
             strong:{
+              '@apply font-sans': {}
+            },
+            em:{
               '@apply font-sans': {}
             }
           }
