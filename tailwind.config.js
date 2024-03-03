@@ -8,7 +8,7 @@ module.exports = {
         DEFAULT:{
           css:{
             p:{
-              '@apply font-rubik opacity-80 antialiased': {},
+              '@apply font-rubik opacity-80 antialiased text-justify': {},
             },
             h3:{
               '@apply font-lora': {}
@@ -18,6 +18,12 @@ module.exports = {
             },
             em:{
               '@apply font-sans': {}
+            },
+            img:{
+              '@apply rounded-xl shadow-xl mb-0':{}
+            },
+            figcaption:{
+              '@apply opacity-50 mt-0 font-mono tracking-tight':{}
             }
           }
         }
