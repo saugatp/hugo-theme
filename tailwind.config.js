@@ -23,7 +23,7 @@ module.exports = {
               '@apply rounded-xl shadow-xl mb-0':{}
             },
             figcaption:{
-              '@apply opacity-50 mt-0 font-mono tracking-tight':{}
+              '@apply opacity-40 mt-0 font-mono tracking-tight':{}
             }
           }
         }
